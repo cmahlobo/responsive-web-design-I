@@ -1,3 +1,362 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+	color: gray;
+  }
+
+ul {
+	display: flex;
+} 
+@media (max-width: 800px){
+    .navigation{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+nav ul {
+	margin:0 auto;
+}
+
+@media (max-width: 800px){
+    nav{
+        width: 50%;
+    }
+}
+
+nav ul li{
+	margin-left: 50px;
+}
+
+@media (max-width: 500px){
+    nav ul li{
+        margin: 0 auto;
+        border-bottom: 1px solid gray;
+    }
+}
+
+  span{
+	  margin: 50px;
+  }
+
+
+h1 {
+	font-size: 50px;
+	width:20%;
+}
+
+
+header {
+	display: flex;
+	border-bottom: 1px solid black;
+	width: 800px;
+	margin: 0 auto;
+}
+@media (max-width: 800px){
+    header {
+        width:100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    header {
+        width:100%;
+        justify-content: center;
+    }
+}
+
+header div img {
+	/* display: inline-block; */
+	width: 100%;
+}
+
+header img{
+	margin-left: 120px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+header div{
+	margin-top: 200px;
+	margin-left:120px;
+	margin-bottom: 60px;
+}
+
+li .logo{
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    header img {
+        display: none;
+    }
+    header div {
+        margin: 0 auto;
+        padding:50px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    header img{
+        display: none;
+    }
+
+    header div{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.img-main{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px){
+    .img-main{
+        display: flex;
+        margin: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    .img-main{
+        width: 80%;
+    }
+}
+
+.container {
+	display: flex;
+	width: 800px;
+	margin: 0 auto;
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.container div{
+  /* display: inline-block; */
+  width: 310px;
+  margin-right: 80px;
+}
+
+.container2{
+	display: flex;
+	width: 800px;
+	margin: 0 auto;
+}
+
+@media (max-width: 800px){
+    .container2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+.container2 div {
+	margin-bottom: 40px;
+	/* display: inline-block; */
+	width:170px;
+	margin-right: 70px;
+	margin-bottom: 20px;
+	
+}
+
+address{
+	border-top: 1px solid black;
+	padding-top: 20px;
+	width: 800px;
+	margin: 0 auto;
+}
+@media (max-width: 800px){
+    address{
+        width:100%;
+    }
+}
+
+@media (max-width: 500px){
+    address{
+        width:100%;
+    }
+}
+
+footer p {
+	text-align: center;
+}
+
+/* additional code */
+
+footer div {
+	display: flex;
+}
+footer div p {
+
+}
 
